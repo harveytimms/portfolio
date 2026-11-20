@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harvey Timms Engineering Portfolio</title>
+<meta name="description" content="Harvey Timms, MEng Mechanical Engineering student at the University of Sheffield: projects, roles and the skills each one shows.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Harvey Timms Engineering Portfolio">
+<meta property="og:description" content="MEng Mechanical Engineering, University of Sheffield. Projects, roles and the skills each one shows.">
+<meta property="og:url" content="https://harveytimms.github.io/portfolio/">
+<meta property="og:image" content="https://harveytimms.github.io/portfolio/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script>try{var t=localStorage.getItem("ht-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<!--
+  HOW THIS PAGE IS ORGANISED (see README.md for the full guide)
+  - Every project or role is an <article class="sheet slide"> with:
+      data-skills  space-separated keys used by the Evidence index:
+                   lead team design analysis code build test pm commercial
+      data-short   short name for the index and the Present-mode bar
+      data-year    year shown in the index
+  - Photos live in images/<project>/ and go in that sheet's .gallery as
+      <figure class="shot"><img ...><figcaption>Caption</figcaption></figure>
+    The first photo is shown large. Add class "fit" for diagrams and plots,
+    "portrait" for tall photos, "natural" to keep a photo's own shape.
+  - Photos still wanted are listed in each sheet's .wanted block. They only show
+    when the address ends in #draft.
+-->
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead-row">
+    <a class="wordmark" href="#top">
+      <span class="wm-name">Harvey Timms</span>
+      <span class="wm-sub">Mechanical Engineering MEng</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#index">Index</a>
+      <a href="#projects">Projects</a>
+      <a href="#roles">Roles</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+        <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+      <button class="btn btn-present" id="present-toggle" type="button" aria-pressed="false" title="Present (P)">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+        <span class="label">Present</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= COVER ================= -->
+<section class="cover slide" id="top" data-short="Harvey Timms" aria-labelledby="cover-title">
+  <div class="wrap cover-grid">
+    <div class="cover-text">
+      <p class="eyebrow">MEng Mechanical Engineering · University of Sheffield</p>
+      <h1 class="cover-name" id="cover-title">Harvey<br>Timms</h1>
+      <p class="cover-lead">Second-year mechanical engineering student. I combine practical, hands-on experience with analysis and modelling, and I do my best problem-solving in conversation with a team.</p>
+      <p class="cover-seeking"><span class="hl">Looking for a 12-month industrial placement in 2027–28.</span></p>
+      <dl class="tblock tblock-cover">
+        <div><dt>Year 1 result</dt><dd>74% · First</dd></div>
+        <div><dt>A levels</dt><dd>A*AAA</dd></div>
+        <div><dt>Updated</dt><dd>Nov 2026</dd></div>
+        <div><dt>Contact</dt><dd><a href="#contact">Email and LinkedIn</a></dd></div>
+        <div class="wide"><dt>Now</dt><dd><span class="nowrap">Avis Drone Labs ·</span> <span class="nowrap">iForge Makerspace ·</span> <span class="nowrap">SELA ·</span> <span class="nowrap">E-bike gearbox</span></dd></div>
+      </dl>
+    </div>
+    <figure class="cover-photo">
+      <img src="images/iforge/portrait.jpg" width="1469" height="1501" alt="Harvey Timms in an iForge Makerspace apron and safety glasses, standing in the workshop" fetchpriority="high">
+      <figcaption>At iForge, the University of Sheffield's student makerspace</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= EVIDENCE INDEX ================= -->
+<section class="part slide" id="index" data-short="Evidence index" aria-labelledby="index-title">
+  <div class="wrap">
+    <header class="part-head">
+      <div>
+        <p class="eyebrow">Evidence index</p>
+        <h2 class="part-title" id="index-title">Where to find each skill</h2>
+      </div>
+      <p class="part-note">Every project and role, mapped to the skills it shows. Pick a skill to see where I've used it, or pick a project to jump to it.</p>
+    </header>
+    <div class="matrix-wrap">
+      <div class="matrix-scroll"><table class="matrix" id="matrix"><caption class="visually-hidden">Projects and roles against the skills each one shows</caption></table></div>
+      <p class="matrix-status" id="matrix-status" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="part" id="projects" aria-labelledby="projects-title">
+  <div class="wrap">
+    <header class="part-head">
+      <div>
+        <p class="eyebrow">Projects · 8</p>
+        <h2 class="part-title" id="projects-title">Projects</h2>
+      </div>
+      <p class="part-note">University coursework, my drone team, a personal build, and two projects from before university.</p>
+    </header>
+
+    <p class="group-label">At university · 2025 to now</p>
+
+    <!-- ---------- Water Bottle Rocket ---------- -->
+    <article class="sheet slide" id="rocket" data-short="Water Bottle Rocket" data-year="2026" data-skills="lead team design analysis code build test pm">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">University project · Year 1</p>
+          <h3 class="sheet-title">Water Bottle Rocket</h3>
+        </div>
+      </header>
+      <dl class="tblock">
+        <div><dt>Role</dt><dd>Team lead</dd></div>
+        <div><dt>When</dt><dd>Feb – Jun 2026</dd></div>
+        <div><dt>Team</dt><dd>Tutor group</dd></div>
+        <div><dt>Tools</dt><dd>MATLAB, CNC router</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">Design, build and launch three rockets that deliver medicine-bottle payloads to a target, from an adjustable-angle launcher.</p>
+          <ul class="dims" aria-label="Key results">
+            <li><span class="dim-val">1st</span><span class="dim-lbl">of 61 groups for accuracy</span></li>
+            <li><span class="dim-val">&lt;6%</span><span class="dim-lbl">model error against 5 test launches</span></li>
+            <li><span class="dim-val">3/3</span><span class="dim-lbl">rockets in the 65–70 m target zone</span></li>
+          </ul>
+          <h4 class="sub">What I did</h4>
+          <ul class="points">
+            <li>Led the team: managed tasks, timelines and stakeholders, ran our meetings and wrote the launch-day risk assessment.</li>
+            <li>Built a MATLAB model of bottle pressure, thrust, velocity and flight trajectory.</li>
+            <li>Validated the model against thrust-rig data and 5 test launches, varying rocket mass and pressure.</li>
+            <li>Prototyped the adjustable-angle launcher, and created the CAM toolpaths to cut the foamboard body panels on a CNC router.</li>
+          </ul>
+          <h4 class="sub">Result</h4>
+          <p><span class="hl">1st out of 61 groups for accuracy.</span> All three rockets landed in the 65–70 m target zone: a 100% success rate against the design criteria.</p>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot"><img src="images/rocket/final-rocket.jpg" width="800" height="678" alt="The finished rocket loaded on the adjustable-angle launcher" loading="lazy" decoding="async"><figcaption>Final rocket on the adjustable-angle launcher</figcaption></figure>
+            <figure class="shot"><img src="images/rocket/launch.jpg" width="791" height="1440" alt="A rocket being launched on the sports field" loading="lazy" decoding="async" style="object-position: 50% 40%"><figcaption>Launch day</figcaption></figure>
+            <figure class="shot"><img src="images/rocket/team.jpg" width="800" height="600" alt="The rocket team standing behind the launcher on the sports field" loading="lazy" decoding="async"><figcaption>The team on launch day</figcaption></figure>
+            <figure class="shot fit"><img src="images/rocket/model-error.png" width="864" height="736" alt="MATLAB plot of percentage error against measured distance, falling to within a few percent across the design range" loading="lazy" decoding="async"><figcaption>Model validation: percentage error against measured distance</figcaption></figure>
+            <figure class="shot fit"><img src="images/rocket/mission.png" width="548" height="253" alt="Diagram of the launch scenario showing the launcher, a 50 metre span, a 3 metre tree and the target range" loading="lazy" decoding="async"><figcaption>Launch scenario from the brief</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">Thrust test rig</div>
+            <div class="want">CNC router cutting the foamboard panels</div>
+            <div class="want">MATLAB trajectory plot</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- Avis Drone Labs ---------- -->
+    <article class="sheet slide" id="avis" data-short="Avis Drone Labs" data-year="2026" data-skills="team design">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">University team · IMechE UAS Challenge 2027</p>
+          <h3 class="sheet-title">Avis Drone Labs</h3>
+        </div>
+        <span class="logo-plate square"><img src="images/logos/avis.jpg" width="200" height="200" alt="Avis Drone Labs logo"></span>
+      </header>
+      <dl class="tblock">
+        <div><dt>Role</dt><dd>Structural and design engineer</dd></div>
+        <div><dt>When</dt><dd>2026 – now</dd></div>
+        <div><dt>Team</dt><dd>Structures team</dd></div>
+        <div><dt>Competition</dt><dd>IMechE UAS Challenge</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">Avis is the University of Sheffield's student drone team, designing and building an unmanned aircraft for the IMechE UAS Challenge. I joined after building my own quadcopter over the summer.</p>
+          <h4 class="sub">What I do</h4>
+          <ul class="points">
+            <li>Research and develop lightweight valve designs.</li>
+            <li>Integrate the drone's water tank into the fuselage design to meet the competition requirements.</li>
+          </ul>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot natural"><img src="images/avis/team.jpg" width="852" height="567" alt="The Avis Drone Labs team on a staircase in matching team hoodies" loading="lazy" decoding="async"><figcaption>The Avis Drone Labs team</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">The aircraft or fuselage</div>
+            <div class="want">Water tank in the fuselage (CAD)</div>
+            <div class="want">Valve design (CAD or prototype)</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- Quadcopter ---------- -->
+    <article class="sheet slide" id="quadcopter" data-short="Quadcopter" data-year="2026" data-skills="design analysis code build">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">Personal project · Summer 2026</p>
+          <h3 class="sheet-title">Quadcopter Build</h3>
+        </div>
+      </header>
+      <dl class="tblock">
+        <div><dt>Role</dt><dd>Independent project</dd></div>
+        <div><dt>When</dt><dd>Summer 2026</dd></div>
+        <div><dt>Tools</dt><dd>Python, OpenSCAD, Fusion 360</dd></div>
+        <div><dt>Methods</dt><dd>FEA, generative design</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">I specified and built a small quadcopter over the summer as an independent research project. It led to me joining Avis Drone Labs.</p>
+          <h4 class="sub">What I did</h4>
+          <ul class="points">
+            <li>Coded a parametric propeller designer in Python and OpenSCAD to optimise thrust efficiency.</li>
+            <li>Used FEA and generative design in Fusion 360 to improve the strength-to-weight ratio of a carbon fibre airframe.</li>
+          </ul>
+          <h4 class="sub">Next</h4>
+          <p class="next">Run the propeller designs through CFD, 3D print them and measure thrust. Use accelerometer data to measure vibration.</p>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot natural"><img src="images/quadcopter/frame.jpg" width="800" height="360" alt="Quadcopter prototype frame with motors, wiring and green propellers" loading="lazy" decoding="async"><figcaption>Prototype frame and electronics</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">The finished quadcopter</div>
+            <div class="want">Propellers from the OpenSCAD designer</div>
+            <div class="want">Airframe FEA or generative design result</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- E-Bike Gearbox ---------- -->
+    <article class="sheet slide" id="ebike" data-short="E-Bike Gearbox" data-year="2026" data-skills="lead design analysis code pm">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">University project · Year 2</p>
+          <h3 class="sheet-title">E-Bike Gearbox</h3>
+        </div>
+      </header>
+      <dl class="tblock">
+        <div><dt>Role</dt><dd>Team lead</dd></div>
+        <div><dt>When</dt><dd>Sept 2026 – now</dd></div>
+        <div><dt>Tools</dt><dd>Python, Excel</dd></div>
+        <div><dt>Methods</dt><dd>Work breakdown, critical path</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">A second-year team project to design a gearbox for an electric bike, with less specification guidance and more independence than first-year projects.</p>
+          <h4 class="sub">What I did</h4>
+          <ul class="points">
+            <li>Built an Excel project management tool for tasks, timelines and resources, using a work breakdown structure and critical path analysis.</li>
+            <li>Coded a gear, shaft and belt stress calculator in Python, with batch input and data plotting, to inform design selection.</li>
+            <li>Designed and evaluated transmission systems against manufacturing, durability and performance criteria.</li>
+          </ul>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery"></div>
+          <div class="wanted">
+            <div class="want">Gearbox CAD</div>
+            <div class="want">A plot from the Python stress calculator</div>
+            <div class="want">Project plan (Gantt or critical path)</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- Reaching Aid ---------- -->
+    <article class="sheet slide" id="reaching-aid" data-short="Reaching Aid" data-year="2025" data-skills="team design analysis build test commercial">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">University project · Year 1</p>
+          <h3 class="sheet-title">Reaching Aid</h3>
+        </div>
+      </header>
+      <dl class="tblock">
+        <div><dt>When</dt><dd>Oct – Dec 2025</dd></div>
+        <div><dt>Team</dt><dd>Tutor group</dd></div>
+        <div><dt>Tools</dt><dd>Ansys Granta EduPack</dd></div>
+        <div><dt>Methods</dt><dd>FMEA, FEA, tensile testing</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">Design a reaching aid for users with limited wrist flexion and grip strength, with sustainability as a key consideration.</p>
+          <h4 class="sub">What I did</h4>
+          <ul class="points">
+            <li>Developed inclusive design criteria around users with limited wrist mobility.</li>
+            <li>Prototyped mechanisms in MDF to test and refine the design.</li>
+            <li>Selected materials and processes in Ansys Granta EduPack, and created eco-audits to improve sustainability.</li>
+            <li>Validated durability with FMEA, FEA and tensile testing.</li>
+          </ul>
+          <h4 class="sub">Result</h4>
+          <p>Presented a design solution covering commercial and technical feasibility, backed by an integrated analysis report.</p>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot fit"><img src="images/reaching-aid/concepts.png" width="800" height="526" alt="Concept sketches of several reaching aid mechanisms" loading="lazy" decoding="async"><figcaption>Concept sketches</figcaption></figure>
+            <figure class="shot portrait"><img src="images/reaching-aid/prototype.jpg" width="1171" height="1535" alt="MDF prototype of a jointed mechanism operated by cords" loading="lazy" decoding="async"><figcaption>MDF prototype mechanism</figcaption></figure>
+            <figure class="shot portrait"><img src="images/reaching-aid/tensile-test.jpg" width="1151" height="1535" alt="A material sample in a tensile testing machine" loading="lazy" decoding="async"><figcaption>Tensile testing</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">FEA result</div>
+            <div class="want">Final design (CAD or render)</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- Global Engineering Challenge ---------- -->
+    <article class="sheet slide" id="gec" data-short="Global Engineering Challenge" data-year="2026" data-skills="team commercial">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">University · Challenge week</p>
+          <h3 class="sheet-title">Global Engineering Challenge</h3>
+        </div>
+      </header>
+      <dl class="tblock">
+        <div><dt>When</dt><dd>Jan 2026</dd></div>
+        <div><dt>Length</dt><dd>One week</dd></div>
+        <div><dt>Team</dt><dd>Multidisciplinary</dd></div>
+        <div><dt>Audience</dt><dd>Industry mentors</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">Develop a measurable and achievable plan to reduce flood risk in Sheffield's River Don and Sheaf catchments.</p>
+          <h4 class="sub">What I did</h4>
+          <ul class="points">
+            <li>Mapped stakeholder requirements and dependencies across the catchments with a rich picture.</li>
+            <li>Researched cost estimates and compared "grey" and "green" infrastructure solutions.</li>
+            <li>Assessed the ethics, sustainability and inclusivity of each solution.</li>
+          </ul>
+          <h4 class="sub">Result</h4>
+          <p>Developed a screening and impact analysis and presented it to a panel of industry mentors.</p>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot fit"><img src="images/gec/design-ideas.png" width="1598" height="652" alt="Illustrations of grey and green flood defence ideas, including storage tanks, wetlands and river restoration" loading="lazy" decoding="async"><figcaption>Grey and green infrastructure ideas</figcaption></figure>
+            <figure class="shot fit"><img src="images/gec/rich-picture.png" width="799" height="715" alt="Hand-drawn rich picture linking stakeholders around the flooding problem" loading="lazy" decoding="async"><figcaption>Rich picture of stakeholders and dependencies</figcaption></figure>
+            <figure class="shot"><img src="images/gec/flood-map.jpg" width="799" height="461" alt="Map of Sheffield with flood risk areas marked along the rivers" loading="lazy" decoding="async"><figcaption>Flood risk map of Sheffield</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">Presenting to the industry mentors</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <p class="group-label">Before university · 2023 to 2024</p>
+
+    <!-- ---------- EDT Industrial Cadets: crater levelling tool ---------- -->
+    <article class="sheet slide" id="edt" data-short="Crater Levelling Tool" data-year="2024" data-skills="lead team design analysis code build test">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">EDT Industrial Cadets Gold · Sellafield design problem</p>
+          <h3 class="sheet-title">Crater Levelling Tool</h3>
+        </div>
+        <span class="logo-plate"><img src="images/logos/edt-industrial-cadets.png" width="765" height="115" alt="EDT Industrial Cadets logo"></span>
+      </header>
+      <dl class="tblock">
+        <div><dt>Role</dt><dd>Technical lead</dd></div>
+        <div><dt>When</dt><dd>Oct 2023 – May 2024</dd></div>
+        <div><dt>Team</dt><dd>Six students</dd></div>
+        <div><dt>Tools</dt><dd>CAD, Arduino (C++), strain gauges</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">Develop a prototype crater levelling tool for a real Sellafield design problem.</p>
+          <ul class="dims" aria-label="Key results">
+            <li><span class="dim-val">3</span><span class="dim-lbl">axes of motion from our winch module</span></li>
+            <li><span class="dim-val">Gold</span><span class="dim-lbl">Industrial Cadets award, plus Silver</span></li>
+          </ul>
+          <h4 class="sub">What I did</h4>
+          <ul class="points">
+            <li>Modelled the mechanism in CAD and ran a motion study of the linkages and drive to quantify range of motion and remove collisions.</li>
+            <li>Programmed stepper motors in Arduino (C++), using live strain-gauge input to automate the scraper's actuation.</li>
+            <li>Diagnosed tolerancing errors in the linkage joints and fixed them with shoulder bolts and reamed holes, maximising the linkage's range of motion.</li>
+            <li>Designed and built a rotating winch module that gave the scraper three axes of motion.</li>
+          </ul>
+          <h4 class="sub">Result</h4>
+          <p>Our scale-model test rig validated the prototype's performance, and the project won the <span class="hl">Most Innovative Design award</span>.</p>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot"><img src="images/edt/team-rig.jpg" width="1600" height="1200" alt="The six-person team standing behind the wooden scale-model test rig at the showcase" loading="lazy" decoding="async"><figcaption>The team with the scale-model test rig</figcaption></figure>
+            <figure class="shot"><img src="images/edt/prototype.jpg" width="799" height="557" alt="Prototype scraper with a scissor linkage and motor mount" loading="lazy" decoding="async"><figcaption>Prototype scraper mechanism</figcaption></figure>
+            <figure class="shot"><img src="images/edt/brief.jpg" width="800" height="708" alt="Photo of the industrial setting supplied with the Sellafield design brief" loading="lazy" decoding="async"><figcaption>From the Sellafield design brief</figcaption></figure>
+            <figure class="shot"><img src="images/edt/strain-gauges.jpg" width="800" height="360" alt="Close-up of the mechanism with strain gauges and wiring" loading="lazy" decoding="async"><figcaption>Strain gauges on the mechanism</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">CAD motion study</div>
+            <div class="want">Rotating winch module</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- UK Space Design Competition ---------- -->
+    <article class="sheet slide" id="uksdc" data-short="UK Space Design Competition" data-year="2024" data-skills="lead team design">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">National final · 24-hour design sprint</p>
+          <h3 class="sheet-title">UK Space Design Competition</h3>
+        </div>
+        <span class="logo-plate"><img src="images/logos/uksdc.png" width="127" height="103" alt="UK Space Design Competition logo"></span>
+      </header>
+      <dl class="tblock">
+        <div><dt>Role</dt><dd>Structural team lead</dd></div>
+        <div><dt>When</dt><dd>Mar 2024</dd></div>
+        <div><dt>Team</dt><dd>60 students</dd></div>
+        <div><dt>Tools</dt><dd>Fusion 360</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">Design a theoretical space elevator from the Moon to a Lagrange point, in a 24-hour sprint with a team of 60 students.</p>
+          <ul class="dims" aria-label="Key results">
+            <li><span class="dim-val">1st</span><span class="dim-lbl">winners of the national final</span></li>
+            <li><span class="dim-val">250</span><span class="dim-lbl">students in the audience for our final presentation</span></li>
+          </ul>
+          <h4 class="sub">What I did</h4>
+          <ul class="points">
+            <li>Led the structural team.</li>
+            <li>Created Fusion 360 CAD models of the space station, satellite and communications infrastructure, and the elevator cars.</li>
+            <li>Presented the final design to 250 students and a panel of industry mentors.</li>
+          </ul>
+          <h4 class="sub">Result</h4>
+          <p><span class="hl">Won the national final.</span></p>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot"><img src="images/uksdc/collaboration.jpg" width="960" height="640" alt="Two team members working through the design on a laptop" loading="lazy" decoding="async"><figcaption>Working on the design during the sprint</figcaption></figure>
+            <figure class="shot"><img src="images/uksdc/team.jpg" width="799" height="493" alt="Large group of competitors with medals at the national final" loading="lazy" decoding="async"><figcaption>National final</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">Fusion 360 CAD of the station or elevator cars</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= ROLES ================= -->
+<section class="part" id="roles" aria-labelledby="roles-title">
+  <div class="wrap">
+    <header class="part-head">
+      <div>
+        <p class="eyebrow">Roles · 3, plus work</p>
+        <h2 class="part-title" id="roles-title">Roles and leadership</h2>
+      </div>
+      <p class="part-note">Volunteering, committee work and development programmes alongside my degree.</p>
+    </header>
+
+    <!-- ---------- iForge Makerspace ---------- -->
+    <article class="sheet slide" id="iforge" data-short="iForge Makerspace" data-year="2026" data-skills="lead team build">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">Volunteer · Hardware team</p>
+          <h3 class="sheet-title">iForge Makerspace</h3>
+        </div>
+        <span class="logo-plate"><img src="images/logos/iforge.png" width="667" height="240" alt="iForge Makerspace logo"></span>
+      </header>
+      <dl class="tblock">
+        <div><dt>Role</dt><dd>Technician, supervisor and student rep</dd></div>
+        <div><dt>When</dt><dd>Jan 2026 – now</dd></div>
+        <div><dt>Team</dt><dd>Hardware team</dd></div>
+        <div><dt>Machines</dt><dd>15, plus 4 software packages</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">I volunteer on the hardware team at iForge, the University of Sheffield's student makerspace: training users, helping with their projects, and keeping the machines running and improving.</p>
+          <ul class="dims" aria-label="Key figures">
+            <li><span class="dim-val">15</span><span class="dim-lbl">machines I train and assess users on</span></li>
+            <li><span class="dim-val">4-axis</span><span class="dim-lbl">CNC machining, upgraded from 3-axis</span></li>
+          </ul>
+          <h4 class="sub">What I do</h4>
+          <ul class="points">
+            <li>Supervise, train and assess users in the safe operation of 15 machines and 4 software packages, and monitor health and safety.</li>
+            <li>Advise users on design for manufacture and help them with their projects.</li>
+            <li>Manage maintenance of the CNC mill and CNC router, and introduced 4-axis machining capability.</li>
+            <li>Help keep the space welcoming and inclusive for students with all levels of experience.</li>
+          </ul>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot natural"><img src="images/iforge/advising.jpg" width="800" height="360" alt="Harvey advising a student at a workbench in the iForge workshop" loading="lazy" decoding="async"><figcaption>Advising a user in the workshop</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">The 4-axis CNC setup</div>
+            <div class="want">A part cut on 4 axes</div>
+            <div class="want">Training a user on a machine</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- SELA and SELSA ---------- -->
+    <article class="sheet slide" id="sela" data-short="Leadership Academy" data-year="2026" data-skills="lead team pm commercial">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">Leadership · SELSA 2026 cohort</p>
+          <h3 class="sheet-title">Sheffield Engineering Leadership Academy</h3>
+        </div>
+        <span class="logo-plate"><img src="images/logos/selsa.png" width="463" height="150" alt="SELSA, Sheffield Engineering Leadership and Service Award, logo"></span>
+      </header>
+      <dl class="tblock">
+        <div><dt>Role</dt><dd>Marketing Committee Secretary</dd></div>
+        <div><dt>When</dt><dd>Sept 2026 – now</dd></div>
+        <div><dt>Programme</dt><dd>Leadership and Service Award (SELSA)</dd></div>
+        <div><dt>Training</dt><dd>Risk, negotiation, problem solving</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">I trained with the 2026 cohort of the Sheffield Engineering Leadership and Service Award, and now sit on the academy's marketing committee.</p>
+          <h4 class="sub">On the committee</h4>
+          <ul class="points">
+            <li>Manage planning and timelines, and organise the website, social media and outreach teams.</li>
+          </ul>
+          <h4 class="sub">In SELSA training</h4>
+          <ul class="points">
+            <li>Team leader in a marble-run challenge where four teams could only talk through their leaders: coordinated requirements, compatibility between sections and changes to the brief.</li>
+            <li>Risk-based go/no-go decisions: an F1 race-day role-play in the cold, whose data matched the Challenger failure.</li>
+            <li>Negotiation styles and building rapport, aiming for mutually beneficial outcomes.</li>
+            <li>De Bono's Six Thinking Hats, applied to one analytical and one creative task.</li>
+          </ul>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot"><img src="images/selsa/team-model.jpg" width="1600" height="1588" alt="Harvey and teammates in high-visibility vests presenting their white model" loading="lazy" decoding="async" style="object-position: 50% 30%"><figcaption>Presenting our team's model</figcaption></figure>
+            <figure class="shot"><img src="images/selsa/handshake.jpg" width="864" height="580" alt="Two team leaders shaking hands over a model at a SELSA training day" loading="lazy" decoding="async"><figcaption>SELSA training day</figcaption></figure>
+            <figure class="shot"><img src="images/selsa/workshop.jpg" width="800" height="600" alt="Teams working at tables in a large hall during a SELSA challenge" loading="lazy" decoding="async"><figcaption>SELSA design challenge</figcaption></figure>
+            <figure class="shot natural"><img src="images/selsa/cohort.jpg" width="798" height="317" alt="SELSA team photo with the finished model" loading="lazy" decoding="async"><figcaption>SELSA team photo</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">Marketing committee work (website, social posts or outreach)</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- Emerge ---------- -->
+    <article class="sheet slide" id="emerge" data-short="Emerge" data-year="2026" data-skills="team commercial">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">Enterprise programme</p>
+          <h3 class="sheet-title">Emerge Business Founder Pathway</h3>
+        </div>
+        <span class="logo-plate"><img src="images/logos/emerge.png" width="101" height="44" alt="Emerge logo"></span>
+      </header>
+      <dl class="tblock">
+        <div><dt>When</dt><dd>Feb – Mar 2026</dd></div>
+        <div><dt>Method</dt><dd>Public outreach and surveys</dd></div>
+        <div><dt>Audience</dt><dd>Panel of business experts</dd></div>
+      </dl>
+      <div class="sheet-body">
+        <div class="sheet-text">
+          <p class="brief">Developed and tested a business idea, working with perspectives from psychology, marketing, business and finance.</p>
+          <h4 class="sub">What I did</h4>
+          <ul class="points">
+            <li>Simulated and validated a proposed business idea through public outreach and surveys.</li>
+            <li>Used the survey data to justify a pivot decision.</li>
+            <li>Presented the findings to a panel of business experts.</li>
+          </ul>
+        </div>
+        <div class="sheet-media">
+          <div class="gallery">
+            <figure class="shot small"><img src="images/emerge/outreach.jpg" width="417" height="349" alt="Harvey holding a survey poster with a QR code outside a university building" loading="lazy" decoding="async"><figcaption>Survey outreach</figcaption></figure>
+          </div>
+          <div class="wanted">
+            <div class="want">Pitching to the panel</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- Work and volunteering ---------- -->
+    <article class="sheet slide" id="work" data-short="Work and volunteering">
+      <header class="sheet-head">
+        <div>
+          <p class="sheet-kicker">Alongside school and university</p>
+          <h3 class="sheet-title">Work and volunteering</h3>
+        </div>
+      </header>
+      <div class="plain-cols">
+        <div>
+          <p class="col-title">Work</p>
+          <ul class="entries">
+            <li><span class="what">Kitchen Porter, The Duke of Wellington Inn</span><span class="when">Aug 2024 – Aug 2026</span><span class="note">Assisted chefs, prepared food, managed stock and kept the kitchen clean.</span></li>
+            <li><span class="what">Customer Service Assistant, The Vindolanda Trust</span><span class="when">2024 – 2025</span><span class="note">Prepared and served food and drinks for visitors in the Vindolanda café.</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="col-title">Volunteering and awards</p>
+          <ul class="entries">
+            <li><span class="what">Young Leader, Riding Mill Scout Group</span><span class="when">2022 – 2025</span></li>
+            <li><span class="what">Hockey coach, Tynedale Hockey Club</span><span class="when">2023 – 2025</span></li>
+            <li><span class="what">Silver Duke of Edinburgh's Award and Chief Scout Gold Award</span><span class="when">2018 – 2024</span></li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <figure class="shot natural"><img src="images/earlier/expedition.jpg" width="800" height="576" alt="Four expedition members with large rucksacks on a moorland path" loading="lazy" decoding="async"><figcaption>Scouts and Duke of Edinburgh expedition</figcaption></figure>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= TOOLKIT ================= -->
+<section class="part slide" id="toolkit" data-short="Toolkit" aria-labelledby="toolkit-title">
+  <div class="wrap">
+    <header class="part-head">
+      <div>
+        <p class="eyebrow">Toolkit</p>
+        <h2 class="part-title" id="toolkit-title">Software, methods and machines</h2>
+      </div>
+      <p class="part-note">Each line links to the work where I used it.</p>
+    </header>
+    <div class="toolkit">
+      <div class="tool-row">
+        <h3 class="tool-cat">CAD and design</h3>
+        <p class="tool-list">Fusion 360 (CAD, CAM, FEA and generative design), AutoCAD, OpenSCAD, GD&amp;T on engineering drawings</p>
+        <p class="tool-used">Used in <a href="#quadcopter">Quadcopter</a>, <a href="#uksdc">UKSDC</a>, <a href="#edt">Crater Levelling Tool</a></p>
+      </div>
+      <div class="tool-row">
+        <h3 class="tool-cat">Analysis</h3>
+        <p class="tool-list">MATLAB (time-stepped thermofluid and vibration models), FEA, FMEA, Ansys Granta EduPack for material and process selection</p>
+        <p class="tool-used">Used in <a href="#rocket">Rocket</a>, <a href="#reaching-aid">Reaching Aid</a>, <a href="#quadcopter">Quadcopter</a></p>
+      </div>
+      <div class="tool-row">
+        <h3 class="tool-cat">Programming</h3>
+        <p class="tool-list">Python (Pandas, NumPy, Matplotlib), MATLAB, Arduino (C++)</p>
+        <p class="tool-used">Used in <a href="#ebike">E-Bike Gearbox</a>, <a href="#quadcopter">Quadcopter</a>, <a href="#rocket">Rocket</a>, <a href="#edt">Crater Levelling Tool</a></p>
+      </div>
+      <div class="tool-row">
+        <h3 class="tool-cat">Making</h3>
+        <p class="tool-list">4-axis CNC, CNC router and CAM toolpaths, milling, lathes, 3D printing, sheet metal fabrication, woodturning</p>
+        <p class="tool-used">Used in <a href="#iforge">iForge</a>, <a href="#rocket">Rocket</a>, <a href="#beyond">Woodturning</a></p>
+      </div>
+      <div class="tool-row">
+        <h3 class="tool-cat">Managing projects</h3>
+        <p class="tool-list">Excel planning (work breakdown structure, critical path analysis), risk assessment, Six Thinking Hats</p>
+        <p class="tool-used">Used in <a href="#ebike">E-Bike Gearbox</a>, <a href="#rocket">Rocket</a>, <a href="#sela">SELSA</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="part slide" id="about" data-short="How I work" aria-labelledby="about-title">
+  <div class="wrap">
+    <header class="part-head">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2 class="part-title" id="about-title">How I work</h2>
+      </div>
+      <p class="part-note">From my own reflections in careers mentoring, with the projects that show each one.</p>
+    </header>
+    <div class="traits">
+      <div class="trait">
+        <h3>Collaborative, direct and open</h3>
+        <p>I work best talking to people. Fast, creative discussion and bouncing ideas around drive how I tackle problems.</p>
+        <p class="seen">Seen in <a href="#sela">SELSA</a>, <a href="#uksdc">UKSDC</a>, <a href="#iforge">iForge</a></p>
+      </div>
+      <div class="trait">
+        <h3>I step up to lead</h3>
+        <p>I tend towards leadership roles: team lead on the rocket and e-bike gearbox, technical lead at EDT, and team leader in SELSA training.</p>
+        <p class="seen">Seen in <a href="#rocket">Rocket</a>, <a href="#ebike">E-Bike Gearbox</a>, <a href="#edt">Crater Levelling Tool</a></p>
+      </div>
+      <div class="trait">
+        <h3>I zoom in</h3>
+        <p>I focus closely on whatever I'm working on, including the project management.</p>
+        <p class="seen">Seen in <a href="#ebike">E-Bike Gearbox</a>, <a href="#rocket">Rocket</a></p>
+      </div>
+      <div class="trait">
+        <h3>Curious and practical</h3>
+        <p>I'm always asking questions, and I follow things through.</p>
+        <p class="seen">Seen in <a href="#quadcopter">Quadcopter</a>, <a href="#iforge">iForge</a></p>
+      </div>
+    </div>
+
+    <div class="edu">
+      <p class="col-title">Education</p>
+      <dl class="tblock">
+        <div><dt>University of Sheffield</dt><dd>MEng Mechanical Engineering<small>Sept 2025 – 2030 · Year 1: 74%, First-Class</small></dd></div>
+        <div><dt>Year 2 modules</dt><dd>Mechanics and Dynamics of Solids and Structures; Manufacturing and Materials Processing; Mathematical Modelling and Numerical Methods; Fluid Mechanics and Heat Transfer</dd></div>
+        <div><dt>A levels · 2025</dt><dd>Maths A*, Further Maths A, Physics A, Product Design A</dd></div>
+        <div><dt>GCSEs · 2023</dt><dd>9 GCSEs at grades 7–9</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUTSIDE ENGINEERING ================= -->
+<section class="part slide" id="beyond" data-short="Outside engineering" aria-labelledby="beyond-title">
+  <div class="wrap">
+    <header class="part-head">
+      <div>
+        <p class="eyebrow">Outside engineering</p>
+        <h2 class="part-title" id="beyond-title">Making, sport and the outdoors</h2>
+      </div>
+    </header>
+    <div class="beyond">
+      <div class="b-item b-wood">
+        <div class="b-photos gallery-lite">
+          <img src="images/hobbies/bowl.jpg" width="600" height="609" alt="A turned wooden bowl held in a hand" loading="lazy" decoding="async">
+          <img src="images/hobbies/spatulas.jpg" width="675" height="900" alt="Two whittled wooden spatulas" loading="lazy" decoding="async">
+          <img src="images/hobbies/bowl-outdoors.jpg" width="675" height="900" alt="A turned wooden bowl resting on a log" loading="lazy" decoding="async">
+          <img src="images/hobbies/spoon.jpg" width="1200" height="900" alt="A whittled wooden spoon held over greenery" loading="lazy" decoding="async">
+        </div>
+        <h3>Woodturning and whittling</h3>
+        <p>Turned bowls and whittled spoons and spatulas, made on commission.</p>
+        <ol class="timeline">
+          <li><time>2019</time><span>Built a pole lathe</span></li>
+          <li><time>2020</time><span>Moved up to an electric lathe</span></li>
+          <li><time>2022</time><span>Built a workshop in the garden, which I now use for my other projects too</span></li>
+        </ol>
+      </div>
+      <div class="b-side">
+        <div class="b-item">
+          <div class="b-photos one gallery-lite">
+            <img src="images/hobbies/hockey.jpg" width="820" height="546" alt="Hockey match on an artificial pitch" loading="lazy" decoding="async">
+          </div>
+          <h3>Hockey</h3>
+          <p>Northumberland County and Tynedale Hockey Club, and now the University of Sheffield 4th team.</p>
+        </div>
+        <div class="b-item">
+          <div class="b-photos gallery-lite">
+            <img src="images/hobbies/hike-valley.jpg" width="727" height="724" alt="A walker on a long track through a mountain valley" loading="lazy" decoding="async">
+            <img src="images/hobbies/hike-ridge.jpg" width="1600" height="721" alt="A walker in a red jacket climbing a grassy hillside" loading="lazy" decoding="async">
+          </div>
+          <h3>Long-distance hiking</h3>
+          <p>The Pennine Way, West Highland Way and Hadrian's Wall.</p>
+        </div>
+        <div class="b-item">
+          <h3>Swing dance</h3>
+          <p>Social dancing every week at a local venue.</p>
+          <div class="wanted"><div class="want">Swing dance (optional)</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact slide" id="contact" data-short="Contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2 class="contact-title" id="contact-title">Get in touch</h2>
+    <p class="contact-lead">I'm looking for a 12-month industrial placement in 2027–28. Email is the quickest way to reach me.</p>
+    <div class="contact-lines">
+      <div class="contact-line">
+        <span class="k">Email</span>
+        <a class="v" href="mailto:harveytimms2@gmail.com">harveytimms2@gmail.com</a>
+        <button class="btn btn-quiet copy-btn" type="button" data-copy="harveytimms2@gmail.com">Copy</button>
+      </div>
+      <div class="contact-line">
+        <span class="k">LinkedIn</span>
+        <a class="v" href="https://www.linkedin.com/in/harvey-timms" rel="noopener" target="_blank">linkedin.com/in/harvey-timms</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <div class="wrap colophon-grid">
+    <p>© 2026 Harvey Timms. Set in Barlow and IBM Plex Mono (SIL Open Font License). Press P to present, Esc to stop.</p>
+    <table class="revs">
+      <caption>Revisions</caption>
+      <thead><tr><th scope="col">Rev</th><th scope="col">Date</th><th scope="col">Change</th></tr></thead>
+      <tbody>
+        <tr><td>C</td><td>Nov 2026</td><td>Rebuilt: evidence index, Avis Drone Labs, quadcopter and e-bike gearbox added</td></tr>
+        <tr><td>B</td><td>Oct 2026</td><td>Moved to GitHub Pages</td></tr>
+        <tr><td>A</td><td>Oct 2026</td><td>First version, built in Canva</td></tr>
+      </tbody>
+    </table>
+  </div>
+</footer>
+
+<div class="draft-bar" role="status">
+  <div class="wrap">Draft view: dashed boxes show <span id="want-count">the</span> photos still wanted. They are hidden on the normal page.</div>
+</div>
+
+<div class="hud" id="hud" aria-label="Presentation controls">
+  <button type="button" id="hud-prev" aria-label="Previous section"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button>
+  <span class="hud-pos" id="hud-pos" aria-live="polite"></span>
+  <button type="button" id="hud-next" aria-label="Next section"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button>
+  <span class="hud-hint">Arrow keys move · F full screen</span>
+  <button type="button" id="hud-exit">Exit</button>
+</div>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+  <div class="lb-inner">
+    <div class="lb-top">
+      <span id="lb-count"></span>
+      <button class="lb-btn" type="button" id="lb-close" aria-label="Close photo viewer"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg></button>
+    </div>
+    <div class="lb-stage">
+      <button class="lb-btn" type="button" id="lb-prev" aria-label="Previous photo"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button>
+      <figure class="lb-figure"><img id="lb-img" alt=""></figure>
+      <button class="lb-btn" type="button" id="lb-next" aria-label="Next photo"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button>
+    </div>
+    <p class="lb-cap" id="lb-cap"></p>
+  </div>
+</dialog>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
